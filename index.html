@@ -4,11 +4,14 @@
         <link href="css/bootstrap.css" rel="stylesheet" />
         <link href="css/bootstrap-theme.css" rel="stylesheet" />
         <link href="css/styles.css" rel="stylesheet"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css?family=Anton|Open+Sans+Condensed:300" rel="stylesheet">
+        <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
     </head>
 
     <body>
-        <nav>
+        <nav class="main-nav" id="nav-left">
             <ul>
                 <li>Home</li>
                 <li>Games</li>
@@ -16,11 +19,47 @@
                 <li>About Us</li>
             </ul>
         </nav>
-        <h1>Bitumi Studios</h1>
+
+        <nav class="main-nav" id="nav-right">
+          <ul>
+            <li>
+              About Us
+            </li>
+          </ul>
+        </nav>
+        <svg id="bitumiSigil" xmlns="http://www.w3.org/2000/svg" width="1000" height="1000" viewBox="0 0 1000 1000">
+          <metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
+            <x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c138 79.159824, 2016/09/14-01:09:01        ">
+               <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+                  <rdf:Description rdf:about=""/>
+               </rdf:RDF>
+            </x:xmpmeta>
+            <?xpacket end="w"?></metadata>
+            <defs>
+            <style>
+              .cls-1 {
+                fill-rule: evenodd;
+              }
+            </style>
+          </defs>
+          <path class="cls-1" d="M388.236,747.093c65.689,0,118.941,53.481,118.941,119.453S453.925,986,388.236,986,269.3,932.519,269.3,866.546,322.546,747.093,388.236,747.093Zm429.8-238.864C883.738,508.229,937,561.7,937,627.661S883.738,747.093,818.037,747.093,699.074,693.621,699.074,627.661,752.335,508.229,818.037,508.229ZM626.14,15C691.841,15,745.1,68.481,745.1,134.454S691.841,253.907,626.14,253.907,507.177,200.426,507.177,134.454,560.438,15,626.14,15ZM182.963,253.907c65.7,0,118.963,53.472,118.963,119.432S248.665,492.771,182.963,492.771,64,439.3,64,373.339,117.262,253.907,182.963,253.907Z"/>
+          <path class="cls-1" d="M183.2,320.776l374.85-210.762,42.941,77L226.14,397.779Zm209.137,502.84L767.185,612.854l42.941,77L435.276,900.618Zm309.88-666.952,159.27,400.645-81.627,32.718L620.588,189.381ZM212.952,397.487L372.223,798.132,290.6,830.85,131.325,430.205Z"/>
+        </svg>
+
+        <!-- <div id="canvas_output">
+          <video id="video" style="display:none;" autoplay loop>
+            <source src="vid/anim/base-bitumi-rotate-stacked.mp4" type='video/mp4; codecs="avc1.42E01E"' />
+            <source src="vid/anim/Stacked Comp.webm" type='video/webm; codecs="vorbis,vp8"' />
+            <source src="vid/anim/" type='video/ogg; codecs="theora, vorbis"' />
+          </video>
+          <canvas width="550" height="800" id="buffer"></canvas>
+          <canvas width="550" height="1600" id="output"></canvas>
+        </div> -->
+        <!-- <h1>Bitumi Studios</h1>
 
         <h2>"You do what you gotta do"</h2>
 
-        <h2>BREAK it 'till you MAKE it</h2>
-        <video src="./vid/anim/output.webm" loop autoplay height="800px" width="550px"></video>
+        <h2>BREAK it 'till you MAKE it</h2> -->
+        <script type="text/JavaScript" src="js/bitumiSigil.js"></script>
     </body>
 </html>

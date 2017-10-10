@@ -1,5 +1,40 @@
+html, body {
+  margin: 0;
+}
+
 body {
     margin: 0;
     background-image: url("../img/bg/Header Background.jpg");
     background-size: cover;
+    z-index: 0;
 }
+
+.main-nav {
+  font-family: "Open Sans Condensed", sans-serif;
+  font-size: 30px;
+  letter-spacing: 10%;
+  opacity: .5;
+  color: #FFF;
+}
+
+nav.main-nav#nav-left ul li{
+  float: left;
+  display: inline-block;
+  margin: 20px 20px;
+}
+
+nav.main-nav#nav-right ul li {
+  float: right;
+  display: inline-block;
+  margin: 20px 20px;
+}
+
+#bitumiSigil:hover {
+
+
+}
+
+/*Change this later*/
+/*#canvas_output {
+  z-index: 10;
+}*/
