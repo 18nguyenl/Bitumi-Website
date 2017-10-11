@@ -5,6 +5,7 @@ html, body {
 body {
     margin: 0;
     background-image: url("../img/bg/Header Background.jpg");
+    background-repeat: no-repeat;
     background-size: cover;
     z-index: 0;
 }
@@ -15,23 +16,24 @@ body {
   letter-spacing: 10%;
   opacity: .5;
   color: #FFF;
+  width: 100%;
+  height: 2em;
 }
 
-nav.main-nav#nav-left ul li{
+ul#nav-left li{
   float: left;
   display: inline-block;
-  margin: 20px 20px;
+  margin: 0 20px;
 }
 
-nav.main-nav#nav-right ul li {
+ul#nav-right li {
   float: right;
   display: inline-block;
-  margin: 20px 20px;
+  margin: 0 20px;
 }
 
-#bitumiSigil:hover {
-
-
+.container {
+  margin: 0 25vw;
 }
 
 /*Change this later*/
