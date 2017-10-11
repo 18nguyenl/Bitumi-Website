@@ -19,6 +19,7 @@ body {
 }
 
 .main-nav {
+  box-sizing: content-box;
   font-family: "Open Sans Condensed", sans-serif;
   font-size: 30px;
   letter-spacing: 10%;
@@ -44,31 +45,35 @@ ul#nav-right li {
 
 .container {
   position: relative;
+  margin-left: auto;
+  margin-right: auto;
   top: 15vh;
-  left: 10vw;
-  right: 10vw;
+  /* left: 20vw; */
+  /* right: 20vw; */
   bottom: 15vh;
   padding: 10px;
   min-width: 600px;
-  min-height: 450px;
-  max-width: 800px;
-  max-height: 600px;
+  min-height: 400px;
+  max-width: 1000px;
+  max-height: 800px;
   /* margin: 20px 10vw; */
 }
 
 #container-sigil {
-  position: absolute;
+  float:left;
   display: inline-block;
   margin: 0 10px;
   z-index: 0;
 }
 
 #header-text {
+  display: inline-block;
+  float: left;
   margin-top: 10px;
-  margin-left: 350px;
+  /*margin-left: 350px;*/
   text-overflow: wrap;
   font-family: "Anton", sans-serif;
-  display: inline-block;  
+  display: inline-block;
 }
 
 h1 {
