@@ -91,7 +91,8 @@ h2 {
   color: #13C1C5;
   font-size: 3em;
 }
-/*Change this later*/
-/*#canvas_output {
-  z-index: 10;
-}*/
+
+/*bottom breakoff at <830px*/
+@media screen and (max-height: 830px) {
+
+}
