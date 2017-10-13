@@ -1,0 +1,8 @@
+{
+  "name": "bitumi website",
+  "version": "0.0.0",
+  "dependencies": {
+    "eslint": "^4.8.0",
+    "jqueryui": "^1.11.1"
+  }
+}

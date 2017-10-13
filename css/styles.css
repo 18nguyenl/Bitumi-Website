@@ -59,21 +59,19 @@ ul#nav-right li {
   /* margin: 20px 10vw; */
 }
 
-#container-sigil {
-  float:left;
-  display: inline-block;
+#container-sigil { 
+  float: left; 
   margin: 0 10px;
   z-index: 0;
+  height: auto;
 }
 
 #header-text {
-  display: inline-block;
   float: left;
   margin-top: 10px;
   /*margin-left: 350px;*/
   text-overflow: wrap;
   font-family: "Anton", sans-serif;
-  display: inline-block;
 }
 
 h1 {
@@ -93,6 +91,21 @@ h2 {
 }
 
 /*bottom breakoff at <830px*/
-@media screen and (max-height: 830px) {
+@media screen and (max-height: 900px) {
+  .container {
+    bottom: 30vh;
+  }
+  
+  /* This doesn't work and I want to know why */
+  /* #header-text {
+    font-size: 3em;
+  } */
 
+  h1 {
+    font-size: 6em;
+  }
+
+  h2 {
+    font-size: 3em;
+  }
 }
