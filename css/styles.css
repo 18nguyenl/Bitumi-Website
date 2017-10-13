@@ -63,7 +63,7 @@ ul#nav-right li {
   float: left; 
   margin: 0 10px;
   z-index: 0;
-  height: auto;
+  width: 450px;
 }
 
 #header-text {
