@@ -1,10 +1,10 @@
 $(document).ready(function() {
-    const mainWidth = screen.width;
-    const mainHeight = screen.height;
-    var sigilImage = $("#container-sigil");
-    $(window).resize(function() {
-        var currentWidth = $(window).width();
-        var currentHeight = $(window).height();
-        
+    var sigilSpace = Snap("#container-sigil");
+    Snap.load("./img/vectors/sigil.svg", function(vector) {
+        sigilSpace.append(vector);
+    });
+    var sigilGlow = sigilSpace.filter(Snap.filter.shadow(0, 0, 20, "#13C1C5", 1));
+    sigilSpace.attr({
+        filter: sigilGlow
     });
 });
