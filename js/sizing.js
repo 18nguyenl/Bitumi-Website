@@ -1,4 +1,4 @@
-var sigilAnimTime = 5000;
+var sigilAnimTime = 8000;
 $(document).ready(function() {
     var sigilSpace = Snap("#container-sigil");
     // Snap.load("./img/vectors/sigil.svg", function(vector) {

@@ -23,7 +23,6 @@ body {
   font-family: "Open Sans Condensed", sans-serif;
   font-size: 30px;
   letter-spacing: 10%;
-  opacity: .5;
   color: #FFF;
   width: 100%;
   height: auto;
@@ -31,16 +30,25 @@ body {
   z-index: 1;
 }
 
+#nav-left li:hover, #nav-right li:hover {
+  opacity: 1;
+  text-shadow: 0 0 15px #13C1C5;
+}
+
 ul#nav-left li{
   float: left;
+  opacity: .25;
   display: inline-block;
   margin: 0 20px;
+  transition: opacity 1s, text-shadow 1s;
 }
 
 ul#nav-right li {
   float: right;
+  opacity: .25;
   display: inline-block;
   margin: 0 20px;
+  transition: opacity 2s, text-shadow 2s;
 }
 
 .container {
@@ -108,5 +116,16 @@ h2 {
 
   h2 {
     font-size: 3em;
+  }
+}
+
+@keyframes glowup {
+  0% {
+    opacity: .25;
+    text-shadow: 0 0 0 #13C1C5;
+  }
+  100% {
+    opacity: 1;
+    text-shadow: 0 0 15px #13C1C5;
   }
 }
