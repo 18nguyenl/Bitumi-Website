@@ -22,6 +22,7 @@
         "valid-typeof": "warn"
     },
     "globals": {
-        "Snap": true
+        "Snap": true,
+        "mina": true
     }
 }
