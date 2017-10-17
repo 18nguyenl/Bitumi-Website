@@ -7,4 +7,8 @@ $(document).ready(function() {
     sigilSpace.attr({
         filter: sigilGlow
     });
+
+    //Transform Syntax = Raphael.js Rotate
+    // sigilSpace.transform("r30, 0, 0");
+    sigilSpace.select("#Layer_2:nth-child(1)");
 });
