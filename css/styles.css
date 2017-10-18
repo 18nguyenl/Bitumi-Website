@@ -107,24 +107,6 @@ h2 {
   font-size: 3em;
 }
 
-@media screen and (orientation: portrait) {
-  .main-nav {
-    /* magin: auto 0; */
-  }
-  ul#nav-left li{
-    float: none;
-    margin: 0 10px;
-  }
-  ul#nav-left ul li span {
-    display: initial;
-  }
-  h1 {
-    text-align: center;
-  }
-  ul#nav-right li { display: none;}
-}
-
-/*bottom breakoff at <830px*/
 @media screen and (max-height: 900px) {
   .container {
     bottom: 30vh;
@@ -169,4 +151,24 @@ h2 {
     z-index: -100;
     transform: translate(-50%, -50%);
   }
+}
+
+@media screen and (orientation: portrait) {
+  .main-nav {
+    /* magin: auto 0; */
+    display: flex;
+    justify-content: space-around;
+  }
+  svg#container-sigil {clear: both; height: 35%;}
+  ul#nav-left li{
+    margin: 0 10px;
+  }
+  .container {min-height: 800px;}
+  ul#nav-left ul li span {
+    display: initial;
+  }
+  h1 {
+    text-align: center;
+  }
+  ul#nav-right li { display: none;}
 }
