@@ -26,12 +26,19 @@ body {
 .main-nav {
   font-family: "Open Sans Condensed", sans-serif;
   font-size: 30px;
-  letter-spacing: 10%;
   color: #FFF;
   width: 100%;
   position: fixed;
   z-index: 1;
   vertical-align: top;
+}
+
+.main-nav ul {
+  list-style: none;
+}
+
+.main-nav ul li {
+  cursor: pointer;
 }
 
 #nav-left li:hover, #nav-right li:hover {
@@ -42,15 +49,15 @@ body {
 ul#nav-left li{
   float: left;
   opacity: .25;
-  display: inline-block;
   margin: 0 20px;
+  width: auto;
+  height: auto;
   transition: opacity 1s, text-shadow 1s;
 }
 
 ul#nav-right li {
   float: right;
   opacity: .25;
-  display: inline-block;
   margin: 0 20px;
   transition: opacity 2s, text-shadow 2s;
 }
@@ -84,7 +91,8 @@ ul#nav-left ul li span {
 }
 
 #header-text {
-  float: left;
+  display: inline-block;
+  cursor: default;
   margin-top: 10px;
   /*margin-left: 350px;*/
   text-overflow: wrap;
@@ -100,11 +108,31 @@ h1 {
   text-shadow: 0 0 15px #13C1C5;
 }
 
-h2 {
+h2, #bottom-subhead {
   margin: 0;
   text-align: left;
   color: #13C1C5;
   font-size: 3em;
+}
+
+#bottom-subhead {
+  display: none;
+  text-overflow: wrap;
+  font-family: "Anton", sans-serif;
+  cursor: default;
+}
+
+@media screen and (orientation: landscape) {
+  #nav-left li{
+    float: left;
+  }
+  #nav-left li span {
+    display: none;
+  }
+  #container-sigil {
+    float: left;
+    clear: none;
+  }
 }
 
 @media screen and (max-height: 900px) {
@@ -135,7 +163,7 @@ h2 {
   }
 }
 
-@media screen and (min-height: 900px) and (min-width: 1700px) {
+@media screen and (min-height: 1000px) and (min-width: 1900px) {
   #bg-glow {
     display: initial;
     background-image: none;
@@ -156,19 +184,55 @@ h2 {
 @media screen and (orientation: portrait) {
   .main-nav {
     /* magin: auto 0; */
+    padding: 0 10vw;
+  }
+  #nav-left {
+    width: auto;
+    height: auto;
+    padding: 0 5%;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
+    margin: 10px 0;
   }
-  svg#container-sigil {clear: both; height: 35%;}
   ul#nav-left li{
-    margin: 0 10px;
+    margin: 0 auto;
+    float: none;
   }
-  .container {min-height: 800px;}
   ul#nav-left ul li span {
     display: initial;
   }
-  h1 {
+  .container {
+    min-width: 150px;
+    min-height: 400px;
+    top: 5vh;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+  }
+  #header-text {
+      display: initial;
+  }
+  #container-sigil {
+    height: 35%;
+    margin-top: 20px;
+    float: none;
+    display: inline-block;
+    clear: left;
+    height: 50vh;
+    width: 55vw;
+  }
+  h1, h2 {
     text-align: center;
   }
-  ul#nav-right li { display: none;}
+  #header-subhead {
+    display: none;
+  }
+  #bottom-subhead {
+    margin-top: 10px;
+    display: initial;
+  }
+
+  h1 {font-size: 4em;}
+  h2 {font-size: 2em;}
+  ul#nav-right { display: none;}
 }
