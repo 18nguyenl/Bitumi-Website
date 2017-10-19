@@ -122,22 +122,6 @@ h2, #bottom-subhead {
   cursor: default;
 }
 
-@media screen and (max-height: 400px) {
-  #nav-left li {
-    font-size: .5em;
-  }
-  h1{font-size: 1.5em;}
-  h2, #bottom-subhead {
-    font-size: 1em;
-  }
-}
-
-@media screen and (max-height: 600px) {
-  h1{font-size: 2em;}
-  h2, #bottom-subhead {
-    font-size: 1.5em;
-  }
-}
 @media screen and (orientation: landscape) {
   #nav-left li{
     float: left;
@@ -150,53 +134,6 @@ h2, #bottom-subhead {
     clear: none;
   }
 }
-
-@media screen and (max-height: 900px) {
-  .container {
-    bottom: 30vh;
-  }
-
-  h1 {
-    font-size: 6em;
-  }
-
-  h2 {
-    font-size: 3em;
-  }
-}
-
-@media screen and (max-height: 768px) and (max-width: 1366px) {
-  h1 {font-size: 4.5em;}
-  h2 {font-size: 2.5em;}
-  .main-nav {
-    font-size: 1.3em;
-  }
-  .container {
-    min-width: 500px;
-    min-height: 350px;
-    max-width: 800px;
-    max-height: 600px;
-  }
-}
-
-@media screen and (min-height: 1000px) and (min-width: 1900px) {
-  #bg-glow {
-    display: initial;
-    background-image: none;
-    position: absolute;
-    /* overflow: hidden; */
-    /* position: fixed; */
-    top: 50%;
-    left: 50%;
-    min-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: auto;
-    z-index: -100;
-    transform: translate(-50%, -50%);
-  }
-}
-
 @media screen and (orientation: portrait) {
   .main-nav {
     /* magin: auto 0; */
@@ -218,8 +155,10 @@ h2, #bottom-subhead {
     display: initial;
   }
   .container {
-    min-width: 150px;
-    min-height: 400px;
+    min-width: 40vw;
+    max-width: 300px;
+    min-height: 300px;
+    max-height: 400px;
     top: 5vh;
     display: flex;
     flex-flow: row wrap;
@@ -229,13 +168,12 @@ h2, #bottom-subhead {
       display: initial;
   }
   #container-sigil {
-    height: 35%;
     margin-top: 20px;
     float: none;
     display: inline-block;
     clear: left;
-    height: 50vh;
-    width: 55vw;
+    /* height: 30vh; */
+    width: 80vw;
   }
   h1, h2 {
     text-align: center;
@@ -245,6 +183,7 @@ h2, #bottom-subhead {
   }
   #bottom-subhead {
     margin-top: 2vh;
+    margin-bottom: 30px;
     display: initial;
     font-size: 2em;
   }
@@ -252,4 +191,35 @@ h2, #bottom-subhead {
   h1 {font-size: 4em;}
   h2 {font-size: 2em;}
   ul#nav-right { display: none;}
+}
+
+@media screen and (max-height: 500px) {
+  h1 {font-size: 3em;}
+  h2, h2#bottom-subhead {font-size: 1.5em;}
+}
+
+@media screen and (max-height: 800px) {
+  #container-sigil {height: 55vh;}
+}
+
+@media screen and (max-height: 650px) {
+  #container-sigil {height: 50vh;}
+}
+
+@media screen and (min-height: 1000px) and (min-width: 1900px) {
+  #bg-glow {
+    display: initial;
+    background-image: none;
+    position: absolute;
+    /* overflow: hidden; */
+    /* position: fixed; */
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    transform: translate(-50%, -50%);
+  }
 }
