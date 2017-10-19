@@ -122,6 +122,22 @@ h2, #bottom-subhead {
   cursor: default;
 }
 
+@media screen and (max-height: 400px) {
+  #nav-left li {
+    font-size: .5em;
+  }
+  h1{font-size: 1.5em;}
+  h2, #bottom-subhead {
+    font-size: 1em;
+  }
+}
+
+@media screen and (max-height: 600px) {
+  h1{font-size: 2em;}
+  h2, #bottom-subhead {
+    font-size: 1.5em;
+  }
+}
 @media screen and (orientation: landscape) {
   #nav-left li{
     float: left;
@@ -228,8 +244,9 @@ h2, #bottom-subhead {
     display: none;
   }
   #bottom-subhead {
-    margin-top: 10px;
+    margin-top: 2vh;
     display: initial;
+    font-size: 2em;
   }
 
   h1 {font-size: 4em;}
