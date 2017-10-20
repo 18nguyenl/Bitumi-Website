@@ -88,7 +88,7 @@ ul#nav-left ul li span {
 
 #container-sigil { 
   float: left; 
-  margin: 0 20px;
+  margin: 20px 0;
   z-index: 0;
   width: 35vw;
   height: 60vh;
@@ -127,8 +127,8 @@ h2, #bottom-subhead {
   text-overflow: wrap;
   font-family: "Anton", sans-serif;
   cursor: default;
-  margin-top: 2vh;
-  margin-bottom: 2vh;
+  margin-top: 3vh;
+  margin-bottom: 3vh;
 }
 
 @media screen and (orientation: landscape) {
@@ -155,7 +155,7 @@ h2, #bottom-subhead {
 @media screen and (orientation: portrait) {
   .main-nav {
     /* magin: auto 0; */
-    padding: 0 10vw;
+    padding: 0 5vw;
   }
   ul {position: initial;}
   #nav-left {
@@ -164,10 +164,10 @@ h2, #bottom-subhead {
     padding: 0 5%;
     display: flex;
     justify-content: space-evenly;
-    margin: 10px 0;
+    margin: 1vw 0;
   }
   ul#nav-left li{
-    margin: 0 1.2vw;
+    margin: 0 1.3vw;
     float: none;
   }
   ul#nav-left ul li span {
@@ -186,7 +186,7 @@ h2, #bottom-subhead {
       display: initial;
   }
   #container-sigil {
-    margin-top: 20px;
+    margin: 20px 0;
     float: none;
     display: inline-block;
     clear: left;
@@ -218,7 +218,7 @@ h2, #bottom-subhead {
 }
 
 @media screen and (max-height: 800px) and (orientation: portrait) {
-  #nav-left, #nav-right {font-size: 1em;}
+  #nav-left, #nav-right {font-size: .8em;}
   #container-sigil {height: 55vh;}
 }
 
