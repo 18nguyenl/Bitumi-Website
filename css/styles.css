@@ -7,6 +7,7 @@ html, body {
 }
 
 body {
+    margin: 0;
     background-image: url("../img/bg/Header Background.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -29,8 +30,8 @@ body {
   width: 100%;
   position: fixed;
   z-index: 1;
+  vertical-align: top;
 }
-ul {position: relative; bottom: 20px;}
 
 .main-nav ul {
   list-style: none;
@@ -68,6 +69,7 @@ ul#nav-right li {
   top: 15vh;
   /* left: 20vw; */
   /* right: 20vw; */
+  bottom: 15vh;
   padding: 10px;
   width: 85vw;
   height: 60%;
@@ -151,13 +153,11 @@ h2, #bottom-subhead {
 @media screen and (max-height: 600px) and (max-width: 600px){
   h1 {font-size: 3em;} h2{font-size: 1.5em;}
 }
-
 @media screen and (orientation: portrait) {
   .main-nav {
     /* magin: auto 0; */
     padding: 0 5vw;
   }
-  ul {position: initial;}
   #nav-left {
     width: auto;
     height: auto;
