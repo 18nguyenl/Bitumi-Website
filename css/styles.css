@@ -2,7 +2,7 @@
   box-sizing: border-box;
 }
 
-html, body {
+html, body, h1, h2 {
   margin: 0;
 }
 
@@ -25,7 +25,7 @@ body {
 
 .main-nav {
   font-family: "Open Sans Condensed", sans-serif;
-  font-size: 30px;
+  font-size: 1.5em;
   color: #FFF;
   width: 100%;
   position: fixed;
@@ -94,7 +94,11 @@ body {
 
 #container-sigil { 
   float: left; 
+<<<<<<< HEAD
   margin: 0;
+=======
+  margin: 0 1vw;
+>>>>>>> daaa47e144722c1b130ca8cf2266311391308e3e
   z-index: 0;
   width: 35vw;
   height: 60vh;
@@ -150,7 +154,15 @@ h2, #bottom-subhead {
   }
 }
 
+<<<<<<< HEAD
 /* @media screen and (max-height: 700px) and (min-width: 600px) {
+=======
+@media screen and (max-width: 500px) {
+
+}
+
+@media screen and (max-height: 700px) and (min-width: 600px) {
+>>>>>>> daaa47e144722c1b130ca8cf2266311391308e3e
   h1 {font-size: 4em;} h2{font-size: 2em;}
 }
 
