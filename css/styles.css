@@ -46,7 +46,7 @@ body {
   text-shadow: 0 0 15px #13C1C5;
 }
 
-ul#nav-left li{
+#nav-left li{
   float: left;
   opacity: .3;
   margin: 0 20px;
@@ -55,11 +55,15 @@ ul#nav-left li{
   transition: opacity 1s, text-shadow 1s;
 }
 
-ul#nav-right li {
+#nav-right li {
   float: right;
   opacity: .3;
   margin: 0 20px;
   transition: opacity 2s, text-shadow 2s;
+}
+
+#nav-left li, #nav-right li{
+  transform: translateY(-40%);
 }
 
 .container {
@@ -84,13 +88,13 @@ ul#nav-right li {
   margin-right: auto;
 }
 
-ul#nav-left ul li span {
+#nav-left ul li span {
   display: none;
 }
 
 #container-sigil { 
   float: left; 
-  margin: 0 20px;
+  margin: 0;
   z-index: 0;
   width: 35vw;
   height: 60vh;
@@ -110,7 +114,7 @@ h1 {
   color: white;
   line-height: 110%;
   letter-spacing: 5px;
-  font-size: 7em;
+  font-size: 11vh;
   text-shadow: 0 0 15px #13C1C5;
 }
 
@@ -118,7 +122,7 @@ h2, #bottom-subhead {
   margin: 0;
   text-align: left;
   color: #13C1C5;
-  font-size: 3em;
+  font-size: 5vh;
 }
 
 #bottom-subhead {
@@ -146,13 +150,13 @@ h2, #bottom-subhead {
   }
 }
 
-@media screen and (max-height: 700px) and (min-width: 600px) {
+/* @media screen and (max-height: 700px) and (min-width: 600px) {
   h1 {font-size: 4em;} h2{font-size: 2em;}
 }
 
 @media screen and (max-height: 600px) and (max-width: 600px){
   h1 {font-size: 3em;} h2{font-size: 1.5em;}
-}
+} */
 @media screen and (orientation: portrait) {
   .main-nav {
     /* magin: auto 0; */
@@ -166,11 +170,14 @@ h2, #bottom-subhead {
     justify-content: space-evenly;
     margin: 10px 0;
   }
-  ul#nav-left li{
+  #nav-left li{
+    transform: translateY(-10%);
+    font-size: 4vw;
     margin: 0 1.2vw;
     float: none;
+    white-space: nowrap;
   }
-  ul#nav-left ul li span {
+  #nav-left ul li span {
     display: initial;
   }
   .container {
@@ -186,7 +193,7 @@ h2, #bottom-subhead {
       display: initial;
   }
   #container-sigil {
-    margin-top: 20px;
+    margin: 3vh 0;
     float: none;
     display: inline-block;
     clear: left;
@@ -197,6 +204,8 @@ h2, #bottom-subhead {
     text-align: center;
   }
 
+  h1 {font-size: 10vw;}
+
   #bottom-section {display: flex;}
 
   #header-subhead {
@@ -204,28 +213,37 @@ h2, #bottom-subhead {
   }
   #bottom-subhead {
     display: initial;
-    font-size: 2em;
+    font-size: 6vw;
   }
 
-  h1 {font-size: 4em;}
-  h2 {font-size: 2em;}
   ul#nav-right { display: none;}
 }
 
-@media screen and (min-height: 800px) and (orientation: portrait) {
-  h1 {font-size: 5em;}
-  h2 {font-size: 2em;}
+@media screen and (max-width: 510px) and (orientation: portrait) {
+  #nav-left li {
+    font-size: 2.8vh;
+    transform: translateY(10%);
+  }
+  h1 {
+    font-size: 8vh;
+    line-height: 140%;
+  }
+  #bottom-subhead {
+    font-size: 3vh;
+    margin: 5vh 0;
+  }
+  #container-sigil {height: 50vh;}
 }
 
 @media screen and (max-height: 800px) and (orientation: portrait) {
-  #nav-left, #nav-right {font-size: 1em;}
+  /* #nav-left, #nav-right {font-size: 1em;} */
   #container-sigil {height: 55vh;}
 }
 
 @media screen and (max-height: 600px)  and (orientation: portrait) {
-  h1 {font-size: 3em;}
+  /* h1 {font-size: 3em;}
   h2, h2#bottom-subhead {font-size: 1.5em;}
-  #nav-left, #nav-right {font-size: .8em;}
+  #nav-left, #nav-right {font-size: .8em;} */
   #container-sigil {height: 50vh;}
 }
 
