@@ -94,11 +94,7 @@ body {
 
 #container-sigil { 
   float: left; 
-<<<<<<< HEAD
   margin: 0;
-=======
-  margin: 0 1vw;
->>>>>>> daaa47e144722c1b130ca8cf2266311391308e3e
   z-index: 0;
   width: 35vw;
   height: 60vh;
