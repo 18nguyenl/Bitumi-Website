@@ -150,15 +150,7 @@ h2, #bottom-subhead {
   }
 }
 
-<<<<<<< HEAD
 /* @media screen and (max-height: 700px) and (min-width: 600px) {
-=======
-@media screen and (max-width: 500px) {
-
-}
-
-@media screen and (max-height: 700px) and (min-width: 600px) {
->>>>>>> daaa47e144722c1b130ca8cf2266311391308e3e
   h1 {font-size: 4em;} h2{font-size: 2em;}
 }
 
