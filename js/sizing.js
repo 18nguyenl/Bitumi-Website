@@ -18,9 +18,11 @@ $(document).ready(function() {
     circle3 = sigilSpace.select("#c3"), 
     circle4 = sigilSpace.select("#c4");
     
-    var flip = false;
-    animateMainSigil()
-    setInterval(animateMainSigil, sigilAnimTime);
+    if(!(/Android|webOS|iPhone|iPod|iPad|BlackBerry/i.test(navigator.userAgent))) {
+        var flip = false;
+        animateMainSigil();
+        setInterval(animateMainSigil, sigilAnimTime);
+    }
     function animateMainSigil() {
         if (!flip) {
             circle4.animate({

@@ -6,6 +6,16 @@ html, body, h1, h2 {
   margin: 0;
 }
 
+*::selection {
+  color: rgb(167, 255, 255);
+  text-shadow: 0 0 15px rgb(0, 185, 218);
+}
+
+*::-moz-selection {
+  color: rgb(167, 255, 255);
+  text-shadow: 0 0 15px rgb(0, 185, 218);
+}
+
 body {
     margin: 0;
     background-image: url("../img/bg/Header Background.jpg");
@@ -48,7 +58,7 @@ body {
 
 #nav-left li{
   float: left;
-  opacity: .3;
+  opacity: .5;
   margin: 0 20px;
   width: auto;
   height: auto;
