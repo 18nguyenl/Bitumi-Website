@@ -14,6 +14,7 @@ h1 {
     font-family: "Anton", sans-serif;
     color: #FF1365;
     font-size: 100px;
+    margin: 0;
 }
 
 .wrap-down {
@@ -29,4 +30,21 @@ p {
 #passion-fire {
     width: 50vw;
     height: auto;
+}
+
+#japanese-text-1 {
+    height: 100vh;
+}
+
+section#background-strip {
+    padding: 20vh 0;
+    margin: 20vh 0;
+}
+
+#background-strip {
+    background-image: url("../img/bg/Header Background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: translateX(300px);
+    height: 40vh;
 }
