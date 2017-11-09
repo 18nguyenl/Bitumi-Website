@@ -34,11 +34,13 @@ p {
 
 #japanese-text-1 {
     height: 100vh;
+    position: relative;
+    bottom: 53vh;
 }
 
 section#background-strip {
-    padding: 20vh 0;
-    margin: 20vh 0;
+    padding: 10vh 0;
+    margin: 30vh 0;
 }
 
 #background-strip {
