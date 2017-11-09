@@ -1,0 +1,32 @@
+html, body {
+    margin: 0;
+    background-color: #010A0F;
+}
+
+#bitumi-typography {
+    color: #FFF;
+    font-size: 288px;
+    text-align: center;
+    text-shadow: 0 0 250px rgba(255, 19, 102, 0.65); 
+}
+
+h1 {
+    font-family: "Anton", sans-serif;
+    color: #FF1365;
+    font-size: 100px;
+}
+
+.wrap-down {
+    display: block;
+}
+
+p {
+    font-family: "Pathway Gothic One", sans-serif;
+    color: #27C4C8;
+    font-size: 2em;
+}
+
+#passion-fire {
+    width: 50vw;
+    height: auto;
+}
