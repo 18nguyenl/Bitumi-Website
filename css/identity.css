@@ -1,13 +1,27 @@
 html, body {
     margin: 0;
     background-color: #010A0F;
+    overflow-x: hidden;
 }
 
-#bitumi-typography {
+header {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../img/bg/Header.png");
+    background-color: #288F92;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode: multiply;
+}
+
+h1#bitumi-typography {
     color: #FFF;
     font-size: 288px;
     text-align: center;
-    text-shadow: 0 0 250px rgba(255, 19, 102, 0.65); 
+    text-shadow: 0 0 100vh rgba(255, 19, 102, .55);
 }
 
 h1 {
@@ -15,6 +29,7 @@ h1 {
     color: #FF1365;
     font-size: 100px;
     margin: 0;
+    line-height: 1.5;
 }
 
 .wrap-down {
@@ -24,29 +39,46 @@ h1 {
 p {
     font-family: "Pathway Gothic One", sans-serif;
     color: #27C4C8;
-    font-size: 2em;
+    font-size: 2.25em;
 }
 
 #passion-fire {
-    width: 50vw;
+    margin: 20vh 0;
+    width: 70%;
     height: auto;
 }
 
 #japanese-text-1 {
-    height: 100vh;
+    width: 70%;
     position: relative;
-    bottom: 53vh;
+    bottom: 35%;
 }
 
-section#background-strip {
-    padding: 10vh 0;
-    margin: 30vh 0;
+#part-2 div div div.col-5 {
+    position: relative;
+    bottom: 150px;
+}
+
+#part-2 div div div.col-5 h1, #part-2 div div div.col-5 P {
+    text-align: right;
 }
 
 #background-strip {
     background-image: url("../img/bg/Header Background.jpg");
-    background-size: cover;
+    background-size: stretch;
+    background-color: rgb(5, 206, 209);
+    background-blend-mode: multiply;
     background-repeat: no-repeat;
-    background-position-x: translateX(300px);
+    background-position: left bottom -350px;
     height: 40vh;
+}
+
+#part-3 div div div h1 {
+    text-align: center;
+    font-size: 144px;
+    word-spacing: 2vw;
+}
+
+#part-3 div div div p {
+    text-align: right;
 }
