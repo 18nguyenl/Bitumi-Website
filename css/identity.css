@@ -55,6 +55,7 @@ p {
     width: 70%;
     position: relative;
     bottom: 35%;
+    margin: 10vh 0;
 }
 
 #part-2 div div div.col-5 {
@@ -115,3 +116,28 @@ p {
 #horizontal-jtext {
     transform: translateY(-50%);
 }
+
+@media screen and (max-width: 1400px) {    
+    h1 {
+        font-size: 6em;
+    }
+
+    #part-3 div div div h1 {
+        text-align: right;
+        font-size: 6em;
+        word-spacing: 3vw;
+    }
+
+    h1#bitumi-typography {
+        font-size: 13em;
+    }
+
+    p {
+        font-size: 1.8em;
+    }
+
+    #japanese-text-1 {
+        transform: scale(.8);
+    }
+}
+
