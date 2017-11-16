@@ -7,9 +7,6 @@ window.addEventListener('DOMContentLoaded', function() {
   // We'll ask the browser to use strict code to help us catch errors earlier.
   // https://developer.mozilla.org/Web/JavaScript/Reference/Functions_and_function_scope/Strict_mode
   'use strict';
-  particlesJS.load('plexus', 'particlesjs-config.json', function() {
-    console.log('callback - particles.js config loaded');
-  });
   var translate = navigator.mozL10n.get;
 
   // We want to wait until the localisations library has loaded all the strings.
